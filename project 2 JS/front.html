@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url('aq.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #d1{
+       background-color: transparent;
+       background-size: cover;
+       border-radius: 2px solid black;
+       position: absolute;
+       top:500px;
+       left: 100px;
+       width: 200px;
+       height: 100px;
+       border-radius: 20px;
+       transition-property: background-color;
+    }
+
+    #d1:hover{
+        transition: 2s;
+        background-color: white;
+    }
+    #wr{
+        /*
+        display : none;
+        */
+        display : none;
+        border: 2px solid black;
+        border-radius: 20px;
+        width: 200px;
+        height: 100px;
+        background-color: white;  
+        position: absolute;
+        top: 300px;
+        left: 500px;
+        animation-name: kilo;
+        animation-duration: 5s;
+    }
+    
+    @keyframes kilo{
+        from{
+            top : -10px;
+
+        }
+        to{
+           bottom : 300px;
+        }
+    }
+    #w1{
+        text-align: center;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    #w2{
+        text-align: center;
+        color: red;
+        font-size: xx-large;
+    }
+
+</style>
+<body>
+
+    <div id="wr">
+        <div id="w1">Here I am</div>
+        <div id="w2">&times;</div>
+       </div>
+
+   <button id="d1"> WHERE'S IS OUR MODEL</button>
+    <script src="jav.js"></script>
+   
+</body>
+</html>
+
